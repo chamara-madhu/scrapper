@@ -43,7 +43,7 @@ exports.runScrapper = async (req, res) => {
 
     puppeteerExtra.use(stealthPlugin());
     const browser = await puppeteerExtra.launch({
-      headless: false,
+      headless: true,
     });
     const page = await browser.newPage();
 
