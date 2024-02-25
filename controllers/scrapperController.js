@@ -145,6 +145,8 @@ exports.runScrapper = async (req, res) => {
         const encodedName = encodeURIComponent(data.name);
         const encodedAddress = encodeURIComponent(data.address);
 
+        console.log("process.env.GOOGLE_API_KEY", process.env.GOOGLE_API_KEY);
+
         try {
           const res = await axios.get(
             `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=textquery&input=${encodedName},${encodedAddress}&key=${process.env.GOOGLE_API_KEY}`
