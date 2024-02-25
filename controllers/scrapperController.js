@@ -49,7 +49,7 @@ exports.runScrapper = async (req, res) => {
     const page = await browser.newPage();
     // Set the user agent for the page
     await page.setUserAgent(
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5501.52 Safari/537.36"
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.57 Safari/537.36"
     );
 
     // let result = null;
