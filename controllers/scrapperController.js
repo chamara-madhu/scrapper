@@ -1,3 +1,4 @@
+const puppeteer = require("puppeteer");
 const puppeteerExtra = require("puppeteer-extra");
 const stealthPlugin = require("puppeteer-extra-plugin-stealth");
 const axios = require("axios");
